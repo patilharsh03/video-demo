@@ -154,6 +154,7 @@ video.addEventListener('timeupdate', () => {
 // Click to unmute
 unmuteOverlay.addEventListener('click', () => {
     video.muted = false;
+    video.currentTime = 0;
     video.play();
     unmuteOverlay.classList.remove('show');
 });
